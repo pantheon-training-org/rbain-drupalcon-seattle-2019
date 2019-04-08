@@ -1,0 +1,39 @@
+uuid: 299e99fa-4d51-4670-900a-720fdb5bd4a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_store_address
+    - node.type.store_locations
+  module:
+    - address
+id: node.store_locations.field_store_address
+field_name: field_store_address
+entity_type: node
+bundle: store_locations
+label: 'Store Address'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    country_code: US
+    langcode: ''
+    given_name: Rob
+    family_name: Bain
+    organization: 'Acme Inc.'
+    address_line1: '123 Main'
+    address_line2: ''
+    locality: Anywhere
+    administrative_area: CA
+    postal_code: '77777'
+    additional_name: null
+    sorting_code: null
+    dependent_locality: null
+default_value_callback: ''
+settings:
+  available_countries: {  }
+  langcode_override: ''
+  field_overrides: {  }
+  fields: {  }
+field_type: address
